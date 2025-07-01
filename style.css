@@ -1,0 +1,71 @@
+/* Custom styles for the chat application */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#chatMessages {
+    background-color: #f8f9fa;
+    min-height: 0;
+}
+
+.message {
+    background-color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.system-message {
+    background-color: #e9ecef;
+    font-style: italic;
+}
+
+.message-content {
+    word-wrap: break-word;
+}
+
+.emoji {
+    height: 20px;
+    width: 20px;
+    vertical-align: middle;
+}
+
+#emojiPicker {
+    position: absolute;
+    bottom: 70px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container-fluid {
+        padding: 0 !important;
+    }
+    
+    #onlineUsers {
+        display: none;
+    }
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
